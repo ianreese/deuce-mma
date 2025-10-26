@@ -1,186 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MMAthematix Fight Laboratory Seguin, TX</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #F8F6EE; /* ivory */
-      color: #002855; /* navy */
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Fade Slideshow */
-    .slideshow {
-      position: relative;
-      width: 100%;
-      height: 180px;
-      overflow: hidden;
-      border-bottom: 3px solid #CBB677;
-      background: #000;
-    }
-
-    @media (min-width:768px){ .slideshow { height: 250px; } }
-
-    .slideshow img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* keep full image visible */
-      background-color: #000; /* filler behind letterboxing */
-      opacity: 0;
-      animation: fade 16s infinite;
-    }
-
-    .slideshow img:nth-child(1){animation-delay:0s;}
-    .slideshow img:nth-child(2){animation-delay:4s;}
-    .slideshow img:nth-child(3){animation-delay:8s;}
-    .slideshow img:nth-child(4){animation-delay:12s;}
-
-    @keyframes fade{
-      0%,100%{opacity:0;}
-      10%,25%{opacity:1;}
-      35%{opacity:0;}
-    }
-
-    .divider{height:60px;background:#002855;}
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #002855;
-      text-transform: uppercase;
-      margin: .5rem 0;
-    }
-
-    .tagline { font-size: 1.1rem; color: #002855; }
-    .appointment { color: #CBB677; margin-top: .4rem; }
-
-    .btn-navy { background: #002855; color: #F8F6EE; border: none; }
-    .btn-navy:hover { background: #CBB677; color: #002855; }
-
-    /* Cascade */
-    .disciplines { width: fit-content; margin: 2rem auto; text-align: left; font-weight: 600; }
-    .disciplines p { margin: 0; line-height: 1.8; }
-    .disciplines .boxing { margin-left: 1.5rem; }
-    .disciplines .muay { margin-left: 3rem; }
-    .disciplines .mma { margin-left: 6rem; } /* offset so “A” extends beyond “Muay Thai” */
-
-    /* Pricing */
-    #pricing { padding: 2rem 1rem; text-align: left; color: #002855; }
-    #pricing h2 { text-align: center; margin-bottom: 1rem; }
-    #pricing .dot { color: #CBB677; margin-right: .5rem; }
-    #pricing .block { display: flex; gap: .5rem; margin: .6rem 0; }
-    #pricing hr { border: 0; border-top: 1px solid #CBB677; margin: 1rem 0; }
-
-    /* Gold divider above footer */
-    .footer-divider {
-      height: 2px;
-      background: #CBB677;
-      width: 80%;
-      margin: 0 auto 1rem auto;
-    }
-
-    /* Footer image */
-    footer {
-      position: relative;
-      margin-top: 2rem;
-    }
-
-    footer::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 250px;
-      background:
-        url('static/mma.jpg'),
-        url('static/mma.jpeg'),
-        url('static/mma.png'),
-        url('static/MMA.jpg'),
-        url('static/MMA.jpeg'),
-        url('static/MMA.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      opacity: 0.9;
-    }
-
-    footer .content {
-      position: relative;
-      padding: 270px 1rem 1.5rem 1rem;
-      text-align: center;
-      color: #002855;
-      background: linear-gradient(to top, rgba(248,246,238,1) 60%, rgba(248,246,238,0.8) 100%);
-      font-size: .9rem;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguin Texas | MMAthematix</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#F8F6EE;color:#002855;text-align:center}
+header img{width:100%;height:auto;display:block}
+nav{background:#002855;padding:.6rem 0;display:flex;justify-content:center;gap:1.5rem}
+nav a{color:#F8F6EE;text-decoration:none;font-weight:600;position:relative;padding-bottom:4px}
+nav a:hover{color:#CBB677}
+nav a.active::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#CBB677;
+  border-radius:1px;
+}
+h1{margin:2rem 0 1rem;font-size:2rem;color:#002855}
+.section{padding:1rem}
+.disciplines p{margin:.5rem 0;font-weight:600}
+.btn{background:#002855;color:#F8F6EE;border:none;padding:.6rem 1.2rem;margin:.4rem;text-decoration:none;border-radius:3px;display:inline-block}
+.btn:hover{background:#CBB677;color:#002855}
+footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;color:#002855;background:#f1eee4}
+</style>
 </head>
 <body>
 
-  <!-- FADE SLIDESHOW -->
-  <div class="slideshow">
-    <img src="static/banner1.jpg" alt="Banner1">
-    <img src="static/banner2.jpg" alt="Banner2">
-    <img src="static/banner3.jpg" alt="Banner3">
-    <img src="static/banner4.jpg" alt="Banner4">
-  </div>
+<header>
+  <img src="static/mma.jpg" alt="MMA Hero">
+</header>
 
-  <div class="divider"></div>
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About Duece</a>
+</nav>
 
-  <!-- HEADER -->
-  <section class="hero-content text-center p-4">
-    <h1>MMAthematix Fight Laboratory</h1>
-    <div class="tagline">Brazilian Jiu-Jitsu · Boxing · Muay Thai · MMA</div>
-    <div class="appointment">— By Appointment Only —</div>
-    <div class="mt-4">
-      <a href="tel:+18304060763" class="btn btn-navy m-2">Call Now</a>
-      <a href="sms:+18304060763" class="btn btn-navy m-2">Text Deuce</a>
-      <a href="https://www.facebook.com/share/15tCQeeB5E/?mibextid=wwXIfr" target="_blank" class="btn btn-navy m-2">Facebook</a>
-    </div>
-  </section>
+<h1>Seguin Texas</h1>
 
-  <!-- CASCADING DISCIPLINES -->
+<section class="section">
   <div class="disciplines">
-    <p>Jiu-Jitsu</p>
-    <p class="boxing">Boxing</p>
-    <p class="muay">Muay Thai</p>
-    <p class="mma">MMA</p>
+    <p>Brazilian Jiu-Jitsu</p>
+    <p>Boxing</p>
+    <p>Muay Thai</p>
+    <p>MMA</p>
   </div>
+</section>
 
-  <!-- PRICING -->
-  <section id="pricing">
-    <div class="container" style="max-width:720px;">
-      <h2>Pricing & Packages</h2>
-      <div class="block"><span class="dot">•</span>
-        <div><div>1.5 hr private</div><div style="font-weight:700;">$50</div></div>
-      </div>
-      <div class="block"><span class="dot">•</span>
-        <div><div>TWELVE 1.5 hr privates a month (3/wk)</div><div style="font-weight:700;">$150</div></div>
-      </div>
-      <hr>
-      <div style="text-align:center;font-weight:700;">
-        Team Sparring <span style="opacity:.8;">(free to team)</span> every Sat @ 2 pm
-      </div>
-      <div class="mt-4 text-center">
-        <a href="tel:+18304060763" class="btn btn-navy m-2">Call Now</a>
-        <a href="sms:+18304060763" class="btn btn-navy m-2">Text Deuce</a>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <h2>Pricing & Packages</h2>
+  <p>• 1.5 hr private — <strong>$50</strong></p>
+  <p>• Twelve 1.5 hr privates a month (3/wk) — <strong>$150</strong></p>
+  <p>Team Sparring (free to team) every Sat @ 2 pm</p>
+  <div>
+    <a href="tel:+18304060763" class="btn">Call Now</a>
+    <a href="sms:+18304060763" class="btn">Text Duece</a>
+    <a href="https://www.facebook.com/share/15tCQeeB5E/?mibextid=wwXIfr" class="btn" target="_blank">Facebook</a>
+  </div>
+</section>
 
-  <div class="footer-divider"></div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="content">© 2025 MMAthematix Fight Laboratory | Web Designs by Ian </div>
-  </footer>
-
+<footer>© 2025 MMAthematix Fight Laboratory | Designed by Evan Rexus</footer>
 </body>
 </html>
 
