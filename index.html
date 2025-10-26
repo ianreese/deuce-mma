@@ -5,43 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Seguin Texas | MMAthematix</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#F8F6EE;color:#002855;text-align:center}
-header img{width:100%;height:auto;display:block}
-nav{background:#002855;padding:.6rem 0;display:flex;justify-content:center;gap:1.5rem}
-nav a{color:#F8F6EE;text-decoration:none;font-weight:600;position:relative;padding-bottom:4px}
-nav a:hover{color:#CBB677}
-nav a.active::after{
-  content:"";
-  position:absolute;
-  bottom:0;left:0;
-  width:100%;height:2px;
-  background:#CBB677;border-radius:1px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F8F6EE;
+  color: #002855;
+  text-align: center;
 }
-h1{margin:2rem 0 1rem;font-size:2rem;color:#002855}
-h2{margin-top:.5rem;font-size:1.3rem;font-weight:600;color:#002855}
-.section{padding:1rem}
-.disciplines p{margin:.5rem 0;font-weight:600}
-.btn{background:#002855;color:#F8F6EE;border:none;
-  padding:.6rem 1.2rem;margin:.4rem;text-decoration:none;
-  border-radius:3px;display:inline-block}
-.btn:hover{background:#CBB677;color:#002855}
-footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;
-  color:#002855;background:#f1eee4}
+
+/* Navy bar separator */
+.divider {
+  background: #002855;
+  height: 60px;
+  border-bottom: 3px solid #CBB677;
+}
+
+/* Hero image */
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Headings and text */
+h1 {
+  margin: 2rem 0 0.5rem;
+  font-size: 2rem;
+  color: #002855;
+}
+h2 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #002855;
+}
+h2 a {
+  color: #002855;
+  text-decoration: underline;
+}
+h2 a:hover {
+  color: #CBB677;
+}
+
+/* Disciplines */
+.section {
+  padding: 1rem;
+}
+.disciplines p {
+  margin: 0.6rem 0;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  background: #002855;
+  color: #F8F6EE;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.4rem;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
+.btn:hover {
+  background: #CBB677;
+  color: #002855;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #002855;
+  background: #f1eee4;
+}
 </style>
 </head>
 <body>
 
+<!-- Hero Image -->
 <header>
   <img src="static/mma.jpg" alt="MMA Hero">
 </header>
 
-<nav>
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About Duece</a>
-</nav>
+<!-- Navy Divider Strip -->
+<div class="divider"></div>
 
+<!-- Main Content -->
 <h1>Seguin Texas</h1>
-<h2>Instructor: <a href="about.html" style="color:#002855;text-decoration:underline;">Duece King</a></h2>
+<h2>Instructor: <a href="about.html">Duece King</a></h2>
 
 <section class="section">
   <div class="disciplines">
@@ -52,6 +105,7 @@ footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;
   </div>
 </section>
 
+<!-- Contact Buttons -->
 <div>
   <a href="tel:+18304060763" class="btn">Call Now</a>
   <a href="sms:+18304060763" class="btn">Text Duece</a>
