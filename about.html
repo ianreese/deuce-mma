@@ -3,35 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Duece | MMAthematix Fight Laboratory</title>
+<title>About Duece King | MMAthematix Fight Laboratory</title>
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#F8F6EE;color:#002855;text-align:center}
-nav{background:#002855;padding:.6rem 0;display:flex;justify-content:center;gap:1.5rem}
-nav a{color:#F8F6EE;text-decoration:none;font-weight:600;position:relative;padding-bottom:4px}
-nav a:hover{color:#CBB677}
-nav a.active::after{
-  content:"";
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:2px;
-  background:#CBB677;
-  border-radius:1px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F8F6EE;
+  color: #002855;
+  text-align: center;
 }
-.slideshow{position:relative;width:100%;height:220px;overflow:hidden;border-bottom:3px solid #CBB677;background:#000}
-@media(min-width:768px){.slideshow{height:300px}}
-.slideshow img{position:absolute;width:100%;height:100%;object-fit:contain;background:#000;opacity:0;animation:fade 16s infinite}
-.slideshow img:nth-child(1){animation-delay:0s}
-.slideshow img:nth-child(2){animation-delay:4s}
-.slideshow img:nth-child(3){animation-delay:8s}
-.slideshow img:nth-child(4){animation-delay:12s}
-@keyframes fade{0%,100%{opacity:0}10%,25%{opacity:1}35%{opacity:0}}
-h1{margin:2rem 0 1rem;font-size:2rem;color:#002855}
-.section{padding:1rem 1.5rem;max-width:700px;margin:auto;text-align:left;line-height:1.6}
-.btn{background:#002855;color:#F8F6EE;border:none;padding:.6rem 1.2rem;margin:.4rem;text-decoration:none;border-radius:3px;display:inline-block}
-.btn:hover{background:#CBB677;color:#002855}
-footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;color:#002855;background:#f1eee4}
+
+/* Navigation */
+nav {
+  background: #002855;
+  padding: .6rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+nav a {
+  color: #F8F6EE;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 4px;
+}
+nav a:hover { color: #CBB677; }
+nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #CBB677;
+  border-radius: 1px;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-bottom: 3px solid #CBB677;
+  background: #000;
+}
+@media(min-width:768px){ .slideshow { height: 300px; } }
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  opacity: 0;
+  animation: fade 16s infinite;
+}
+.slideshow img:nth-child(1){ animation-delay:0s; }
+.slideshow img:nth-child(2){ animation-delay:4s; }
+.slideshow img:nth-child(3){ animation-delay:8s; }
+.slideshow img:nth-child(4){ animation-delay:12s; }
+
+@keyframes fade {
+  0%,100% { opacity: 0; }
+  10%,25% { opacity: 1; }
+  35% { opacity: 0; }
+}
+
+/* Page content */
+h1 { margin: 2rem 0 1rem; font-size: 2rem; color: #002855; }
+.section {
+  padding: 1rem 1.5rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+  line-height: 1.6;
+}
+.section strong { color: #002855; }
+
+.btn {
+  background: #002855;
+  color: #F8F6EE;
+  border: none;
+  padding: .6rem 1.2rem;
+  margin: .4rem;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
+.btn:hover { background: #CBB677; color: #002855; }
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: .9rem;
+  color: #002855;
+  background: #f1eee4;
+}
 </style>
 </head>
 <body>
@@ -41,6 +109,7 @@ footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;color:#002855;background:#
   <a href="about.html" class="active">About Duece</a>
 </nav>
 
+<!-- Slideshow -->
 <div class="slideshow">
   <img src="static/banner1.jpg" alt="">
   <img src="static/banner2.jpg" alt="">
@@ -48,12 +117,14 @@ footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;color:#002855;background:#
   <img src="static/banner4.jpg" alt="">
 </div>
 
-<h1>About Duece</h1>
+<h1>Duece King</h1>
 
 <section class="section">
-  <p>Duece is a dedicated mixed-martial-arts instructor based in Seguin, Texas. He offers one-on-one and small-group training sessions covering Brazilian Jiu-Jitsu, Boxing, Muay Thai, and MMA fundamentals. His focus is building real-world technique, endurance, and discipline in a supportive team environment.</p>
+  <p><strong>Duece King</strong> is a retired professional Mixed Martial Artist and boxer — Seguin’s first professional Mixed Martial Artist to emerge. With over 20 years of training across multiple disciplines, he has developed an authentic approach rooted in both tradition and performance.</p>
 
-  <p>Whether you’re stepping onto the mats for the first time or honing your competitive edge, Duece’s hands-on training approach is crafted to develop skill, confidence, and respect for the arts.</p>
+  <p>His <strong>Muay Thai</strong> is under <strong>Edy Ngamkhao</strong>, his <strong>Boxing</strong> is under <strong>Xavier “El Mago” Cepeda</strong>, and he holds a <strong>Black Belt in Brazilian Jiu-Jitsu</strong> under <strong>Master Cleber Luciano</strong>.</p>
+
+  <p>Today, Duece offers private instruction and team training focused on building strong fundamentals, conditioning, and discipline — helping students of all levels develop the mindset and skills of a true martial artist.</p>
 
   <p><strong>Private sessions by appointment only.</strong></p>
 
@@ -63,7 +134,7 @@ footer{margin-top:2rem;padding:1rem 0;font-size:.9rem;color:#002855;background:#
   </div>
 </section>
 
-<footer>© 2025 MMAthematix Fight Laboratory | Designed by Evan Rexus</footer>
+<footer>© 2025 MMAthematix Fight Laboratory | Web Designs by Easy Ian</footer>
 </body>
 </html>
 
