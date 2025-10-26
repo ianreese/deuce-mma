@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Duece King | MMAthematix Fight Laboratory</title>
+<title>Duece King | MMAthematix Fight Laboratory</title>
 <style>
 body {
   margin: 0;
@@ -13,102 +13,87 @@ body {
   text-align: center;
 }
 
-/* Navigation */
-nav {
-  background: #002855;
-  padding: .6rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-nav a {
-  color: #F8F6EE;
-  text-decoration: none;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 4px;
-}
-nav a:hover { color: #CBB677; }
-nav a.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #CBB677;
-  border-radius: 1px;
-}
-
 /* Slideshow */
 .slideshow {
   position: relative;
-  width: 100%;
-  height: 220px;
+  width: 100vw;               /* full viewport width */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;         /* centers it edge to edge */
+  margin-right: -50vw;
+  height: 300px;
   overflow: hidden;
   border-bottom: 3px solid #CBB677;
   background: #000;
 }
-@media(min-width:768px){ .slideshow { height: 300px; } }
+
+@media (min-width: 768px) {
+  .slideshow {
+    height: 360px;
+  }
+}
+
 .slideshow img {
   position: absolute;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center; /* centers the image horizontally & vertically */
-  background: #000;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
   opacity: 0;
   animation: fade 16s infinite;
 }
-.slideshow img:nth-child(1){ animation-delay:0s; }
-.slideshow img:nth-child(2){ animation-delay:4s; }
-.slideshow img:nth-child(3){ animation-delay:8s; }
-.slideshow img:nth-child(4){ animation-delay:12s; }
+
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 4s; }
+.slideshow img:nth-child(3) { animation-delay: 8s; }
+.slideshow img:nth-child(4) { animation-delay: 12s; }
 
 @keyframes fade {
-  0%,100% { opacity: 0; }
-  10%,25% { opacity: 1; }
+  0%, 100% { opacity: 0; }
+  10%, 25% { opacity: 1; }
   35% { opacity: 0; }
 }
 
 /* Page content */
-h1 { margin: 2rem 0 1rem; font-size: 2rem; color: #002855; }
+h1 {margin:2rem 0 1rem;font-size:2rem;color:#002855;}
 .section {
-  padding: 1rem 1.5rem;
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-  line-height: 1.6;
+  padding:1rem 1.5rem;
+  max-width:700px;
+  margin:auto;
+  text-align:left;
+  line-height:1.6;
 }
-.section strong { color: #002855; }
+.section strong {color:#002855;}
+a.link {color:#002855;text-decoration:underline;}
+a.link:hover {color:#CBB677;}
 
+/* Buttons */
 .btn {
-  background: #002855;
-  color: #F8F6EE;
-  border: none;
-  padding: .6rem 1.2rem;
-  margin: .4rem;
-  text-decoration: none;
-  border-radius: 3px;
-  display: inline-block;
+  background:#002855;
+  color:#F8F6EE;
+  border:none;
+  padding:.6rem 1.2rem;
+  margin:.4rem;
+  text-decoration:none;
+  border-radius:3px;
+  display:inline-block;
 }
-.btn:hover { background: #CBB677; color: #002855; }
+.btn:hover {background:#CBB677;color:#002855;}
 
 footer {
-  margin-top: 2rem;
-  padding: 1rem 0;
-  font-size: .9rem;
-  color: #002855;
-  background: #f1eee4;
+  margin-top:2rem;
+  padding:1rem 0;
+  font-size:.9rem;
+  color:#002855;
+  background:#f1eee4;
 }
 </style>
 </head>
 <body>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About Duece</a>
-</nav>
 
 <!-- Slideshow -->
 <div class="slideshow">
@@ -129,9 +114,23 @@ footer {
 
   <p><strong>Private sessions by appointment only.</strong></p>
 
-  <div style="text-align:center;margin-top:1.5rem">
+  <p style="margin-top:1.5rem;text-align:center;">
+    <a href="https://www.facebook.com/media/set/?set=a.1324109699489&type=3&rdid=b6l7TfEKnBCwS0Ai&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BerBzXUHC%2F"
+       target="_blank" class="link"><strong>View Duece King’s Career Highlights on Facebook</strong></a>
+  </p>
+
+<p style="margin-top:1.5rem;text-align:center;">
+  <a href="https://www.facebook.com/media/set/?set=a.1324109699489&type=3&rdid=tVVggTgijVVvInkT&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BerBzXUHC%2F" 
+     target="_blank" 
+     style="color:#002855;text-decoration:underline;font-weight:600;">
+     View Duece King’s Facebook Career Highlights
+  </a>
+</p>
+
+  <div style="text-align:center;margin-top:1.5rem;">
     <a href="tel:+18304060763" class="btn">Call Now</a>
     <a href="sms:+18304060763" class="btn">Text Duece</a>
+    <a href="index.html" class="btn" style="background:#CBB677;color:#002855;">Back to Main Page</a>
   </div>
 </section>
 
