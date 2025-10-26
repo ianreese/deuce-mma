@@ -23,7 +23,7 @@ body {
   margin-right: -50vw;
   height: 300px;
   overflow: hidden;
-  border-bottom: 3px solid #CBB677;
+  #border-bottom: 3px solid #CBB677;
 }
 
 @media (min-width: 768px) {
@@ -39,8 +39,8 @@ body {
   width: 100%;
   height: 100%;
   transform: translate(-50%, -50%);
-  object-fit: cover;              /* still fills full width */
-  object-position: top center;    /* shifts framing upward */
+  object-fit: contain;              /* still fills full width */
+  object-position: center center;    /* shifts framing upward */
   background: #000;
   opacity: 0;
   animation: fade 16s infinite;
